@@ -23,14 +23,15 @@ func move(direction):
 	match direction:
 		"left":
 			dir = left
-			$"icon".flip_h = true
+			$Animations.play("Walk Left")
 		"right":
 			dir = right
-			$"icon".flip_h = false
+			$Animations.play("Walk Right")
 		"up":
 			dir = up
 		"down":
 			dir = down
 		"stop":
 			dir = stop
+			$Animations.stop()
 	pass
