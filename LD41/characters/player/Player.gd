@@ -24,9 +24,11 @@ func move(direction):
 		"left":
 			dir = left
 			$Animations.play("Walk Left")
+			$Steps.play()
 		"right":
 			dir = right
 			$Animations.play("Walk Right")
+			$Steps.play()
 		"up":
 			dir = up
 		"down":
@@ -34,4 +36,5 @@ func move(direction):
 		"stop":
 			dir = stop
 			$Animations.stop()
+			$Steps.stop()
 	pass

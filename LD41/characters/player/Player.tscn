@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://characters/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://interface/HUD.tscn" type="PackedScene" id=2]
 [ext_resource path="res://characters/player/player.png" type="Texture" id=3]
+[ext_resource path="res://characters/player/footsteps2.wav" type="AudioStream" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -22,7 +23,7 @@ custom_solver_bias = 0.0
 radius = 14.4383
 height = 208.153
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 
 resource_name = "Walk Left"
 length = 0.7
@@ -53,9 +54,8 @@ tracks/1/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 
-resource_name = "Walk Right"
 length = 0.7
 loop = true
 step = 0.1
@@ -84,7 +84,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="KinematicBody2D" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -179,8 +179,16 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-"anims/Walk Left" = SubResource( 5 )
-"anims/Walk Right" = SubResource( 4 )
+"anims/Walk Left" = SubResource( 4 )
+"anims/Walk Right" = SubResource( 5 )
 blend_times = [  ]
+
+[node name="Steps" type="AudioStreamPlayer" parent="." index="7"]
+
+stream = ExtResource( 4 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
 
 
