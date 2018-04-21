@@ -13,8 +13,8 @@ func _ready():
 	pass
 	
 func _physics_process(delta):
-	
-	walk = dir * 100
+
+	walk = dir * 50
 	walk = move_and_slide(walk,up)
 	position.y += 1 
 
@@ -23,8 +23,10 @@ func move(direction):
 	match direction:
 		"left":
 			dir = left
+			$"icon".flip_h = true
 		"right":
 			dir = right
+			$"icon".flip_h = false
 		"up":
 			dir = up
 		"down":
