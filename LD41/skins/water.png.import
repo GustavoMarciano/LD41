@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/console.png-4143c0d010811bbaac028df0c7e6018f.stex"
+path="res://.import/water.png-a89d20d0c72d7a0dc72468f1d66bc459.stex"
 
 [deps]
 
-source_file="res://skins/console.png"
-source_md5="d6019a9a6af1d3bda07278015db678ac"
+source_file="res://skins/water.png"
+source_md5="bc1dd146cf827a68436e46cb5a76eb14"
 
-dest_files=[ "res://.import/console.png-4143c0d010811bbaac028df0c7e6018f.stex" ]
-dest_md5="63225f71850e31605641e04c3cfc939f"
+dest_files=[ "res://.import/water.png-a89d20d0c72d7a0dc72468f1d66bc459.stex" ]
+dest_md5="1425d55e0c587748d855818997026306"
 
 [params]
 

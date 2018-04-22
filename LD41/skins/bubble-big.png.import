@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/console.png-4143c0d010811bbaac028df0c7e6018f.stex"
+path="res://.import/bubble-big.png-38cf55045dc3fe09c8aa40bbe9a351c1.stex"
 
 [deps]
 
-source_file="res://skins/console.png"
-source_md5="d6019a9a6af1d3bda07278015db678ac"
+source_file="res://skins/bubble-big.png"
+source_md5="35ecb99d1146ce09d44ece82ce846f7a"
 
-dest_files=[ "res://.import/console.png-4143c0d010811bbaac028df0c7e6018f.stex" ]
-dest_md5="63225f71850e31605641e04c3cfc939f"
+dest_files=[ "res://.import/bubble-big.png-38cf55045dc3fe09c8aa40bbe9a351c1.stex" ]
+dest_md5="bd583577b18dc87aafe41d501c65702e"
 
 [params]
 
