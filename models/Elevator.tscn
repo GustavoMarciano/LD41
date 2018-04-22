@@ -11,11 +11,11 @@ extents = Vector2( 30.5854, 31.0897 )
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 3.00452, 313.618 )
+extents = Vector2( 2.2395, 313.618 )
 
-[node name="Elevator" type="Sprite"]
+[node name="Sprite6" type="Sprite"]
 
-position = Vector2( 888.205, 305.867 )
+position = Vector2( 887.524, 305.867 )
 scale = Vector2( 0.86322, 0.516514 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )

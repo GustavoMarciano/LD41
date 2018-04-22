@@ -1,6 +1,6 @@
 extends Sprite
 
-onready var hud = $"../Player/HUD/RichTextLabel"
+onready var hud = $"../Player/HUD/Top/Panel/RichTextLabel"
 
 func test():
 	hud.is_interacting = true
@@ -28,4 +28,4 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 
 func _on_Area2D_area_exited(area):
 	hud.disconnect("action",self,"test")
-	pass # replace with function body
+	pass # replace with function body 

@@ -14,10 +14,7 @@ config/name="LD41"
 run/main_scene="res://Master.tscn"
 config/icon="res://icon.png"
 
-[display]
-
-window/stretch/mode="2d"
-
 [rendering]
 
+environment/default_clear_color=Color( 0, 0, 0, 1 )
 environment/default_environment="res://default_env.tres"

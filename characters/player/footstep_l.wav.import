@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/footstep_l.wav-425cf2497197d9e0b1d0c84368b838a2.sample"
+
+[deps]
+
+source_file="res://characters/player/footstep_l.wav"
+source_md5="261c69404f94e00fd03566a9518d4e68"
+
+dest_files=[ "res://.import/footstep_l.wav-425cf2497197d9e0b1d0c84368b838a2.sample" ]
+dest_md5="afd2204faf6542b3e129b468817ff256"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
