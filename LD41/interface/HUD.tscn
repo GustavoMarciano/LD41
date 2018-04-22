@@ -451,7 +451,7 @@ content_margin_bottom = -1.0
 
 [node name="HUD" type="CanvasLayer"]
 
-layer = 1
+layer = 10
 offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )

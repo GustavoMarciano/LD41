@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://levels/StarField.tscn" type="PackedScene" id=1]
 [ext_resource path="res://levels/CorridorStart.tscn" type="PackedScene" id=2]
@@ -8,7 +8,8 @@
 [ext_resource path="res://models/Elevator.tscn" type="PackedScene" id=6]
 [ext_resource path="res://levels/CorridorStartOpen.tscn" type="PackedScene" id=7]
 [ext_resource path="res://levels/CorridorEndClosed.tscn" type="PackedScene" id=8]
-[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=9]
+[ext_resource path="res://interface/Static.tscn" type="PackedScene" id=9]
+[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -53,8 +54,6 @@ tracks/1/keys = {
 [node name="TestLevel" type="Node" index="0"]
 
 [node name="StarField" parent="." index="0" instance=ExtResource( 1 )]
-
-max_speed = 500.0
 
 [node name="Floor" type="StaticBody2D" parent="." index="1"]
 
@@ -282,7 +281,9 @@ position = Vector2( 1015, 312 )
 
 position = Vector2( 980, 226 )
 
-[node name="Player" parent="." index="37" instance=ExtResource( 9 )]
+[node name="Static" parent="." index="37" instance=ExtResource( 9 )]
+
+[node name="Player" parent="." index="38" instance=ExtResource( 10 )]
 
 position = Vector2( 595, 312 )
 

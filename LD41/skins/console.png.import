@@ -7,10 +7,10 @@ path="res://.import/console.png-4143c0d010811bbaac028df0c7e6018f.stex"
 [deps]
 
 source_file="res://skins/console.png"
-source_md5="c92ec4b9fb9437dab0126e55019eff73"
+source_md5="d6019a9a6af1d3bda07278015db678ac"
 
 dest_files=[ "res://.import/console.png-4143c0d010811bbaac028df0c7e6018f.stex" ]
-dest_md5="bf9d8a5e602d6eddaa054e6e1a41cb08"
+dest_md5="f7c3af5c0f4ed31f3421199069ef2c76"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
