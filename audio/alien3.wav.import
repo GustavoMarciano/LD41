@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/alien3.wav-b122712353b1bbda8f18f7c32254e737.sample"
+
+[deps]
+
+source_file="res://audio/alien3.wav"
+source_md5="7b9de6d12e9792dcf11a7c99e962a05c"
+
+dest_files=[ "res://.import/alien3.wav-b122712353b1bbda8f18f7c32254e737.sample" ]
+dest_md5="b259a40a801ac3e6342276c48beb70b6"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

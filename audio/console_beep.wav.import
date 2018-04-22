@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/console_beep.wav-f05131e9d3973fde157dc7a30b72d6e6.sample"
+
+[deps]
+
+source_file="res://audio/console_beep.wav"
+source_md5="6b5ea972c9b638a3e23b14189dd2b5d4"
+
+dest_files=[ "res://.import/console_beep.wav-f05131e9d3973fde157dc7a30b72d6e6.sample" ]
+dest_md5="8e8a7af9bb349b347c4a6e023bb299f2"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

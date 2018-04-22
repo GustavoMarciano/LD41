@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://levels/StarField.tscn" type="PackedScene" id=1]
 [ext_resource path="res://levels/CorridorStart.tscn" type="PackedScene" id=2]
@@ -11,17 +11,7 @@
 [ext_resource path="res://interface/Static.tscn" type="PackedScene" id=9]
 [ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=10]
 
-[sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
-extents = Vector2( 167.621, 10 )
-
-[sub_resource type="RectangleShape2D" id=2]
-
-custom_solver_bias = 0.0
-extents = Vector2( 10, 14.5775 )
-
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=1]
 
 length = 4.0
 loop = false
@@ -36,7 +26,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 805, 312 ), Vector2( 805, 226 ) ]
+"values": [ Vector2( 805, 258 ), Vector2( 805, 172 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:rotation_degrees")
@@ -55,197 +45,110 @@ tracks/1/keys = {
 
 [node name="StarField" parent="." index="0" instance=ExtResource( 1 )]
 
-[node name="Floor" type="StaticBody2D" parent="." index="1"]
+[node name="CorridorStart" parent="." index="1" instance=ExtResource( 2 )]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 455, 258 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" index="0"]
+[node name="CorridorStart2" parent="." index="2" instance=ExtResource( 2 )]
 
-position = Vector2( 607.813, 356.942 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 455, 172 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor" index="1"]
+[node name="CorridorMid2" parent="." index="3" instance=ExtResource( 3 )]
 
-position = Vector2( 1005.6, 356.942 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 490, 258 )
 
-[node name="Floor2" type="StaticBody2D" parent="." index="2"]
+[node name="CorridorMid3" parent="." index="4" instance=ExtResource( 3 )]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 525, 258 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2" index="0"]
+[node name="CorridorMid10" parent="." index="5" instance=ExtResource( 3 )]
 
-position = Vector2( 605.172, 271.079 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 490, 172 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor2" index="1"]
+[node name="CorridorMid11" parent="." index="6" instance=ExtResource( 3 )]
 
-position = Vector2( 1002.17, 271.079 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 525, 172 )
 
-[node name="Wall" type="StaticBody2D" parent="." index="3"]
+[node name="CorridorMid21" parent="." index="7" instance=ExtResource( 4 )]
 
-position = Vector2( 441.886, 325.693 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-_sections_unfolded = [ "Collision", "Transform" ]
+position = Vector2( 875, 258 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall" index="0"]
+[node name="CorridorMid22" parent="." index="8" instance=ExtResource( 4 )]
 
-scale = Vector2( 1, 2.8408 )
-shape = SubResource( 2 )
-_sections_unfolded = [ "Transform" ]
-__meta__ = {
-"_edit_lock_": true
-}
+position = Vector2( 910, 258 )
 
-[node name="Wall2" type="StaticBody2D" parent="." index="4"]
+[node name="CorridorMid23" parent="." index="9" instance=ExtResource( 4 )]
 
-position = Vector2( 441.886, 244.27 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-_sections_unfolded = [ "Collision", "Transform" ]
+position = Vector2( 945, 258 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2" index="0"]
+[node name="CorridorMid24" parent="." index="10" instance=ExtResource( 4 )]
 
-scale = Vector2( 1, 2.8408 )
-shape = SubResource( 2 )
-_sections_unfolded = [ "Transform" ]
-__meta__ = {
-"_edit_lock_": true
-}
+position = Vector2( 980, 258 )
 
-[node name="CorridorStart" parent="." index="5" instance=ExtResource( 2 )]
+[node name="CorridorMid4" parent="." index="11" instance=ExtResource( 3 )]
 
-position = Vector2( 455, 312 )
+position = Vector2( 560, 258 )
 
-[node name="CorridorStart2" parent="." index="6" instance=ExtResource( 2 )]
+[node name="CorridorMid5" parent="." index="12" instance=ExtResource( 3 )]
 
-position = Vector2( 455, 226 )
+position = Vector2( 630, 258 )
 
-[node name="CorridorMid2" parent="." index="7" instance=ExtResource( 3 )]
+[node name="CorridorMid8" parent="." index="13" instance=ExtResource( 3 )]
 
-position = Vector2( 490, 312 )
+position = Vector2( 700, 258 )
 
-[node name="CorridorMid3" parent="." index="8" instance=ExtResource( 3 )]
+[node name="CorridorMid6" parent="." index="14" instance=ExtResource( 4 )]
 
-position = Vector2( 525, 312 )
+position = Vector2( 595, 258 )
 
-[node name="CorridorMid10" parent="." index="9" instance=ExtResource( 3 )]
+[node name="CorridorMid12" parent="." index="15" instance=ExtResource( 4 )]
 
-position = Vector2( 490, 226 )
+position = Vector2( 560, 172 )
 
-[node name="CorridorMid11" parent="." index="10" instance=ExtResource( 3 )]
+[node name="CorridorMid13" parent="." index="16" instance=ExtResource( 4 )]
 
-position = Vector2( 525, 226 )
+position = Vector2( 595, 172 )
 
-[node name="CorridorMid21" parent="." index="11" instance=ExtResource( 4 )]
+[node name="CorridorMid19" parent="." index="17" instance=ExtResource( 4 )]
 
-position = Vector2( 875, 312 )
+position = Vector2( 630, 172 )
 
-[node name="CorridorMid22" parent="." index="12" instance=ExtResource( 4 )]
+[node name="CorridorMid14" parent="." index="18" instance=ExtResource( 4 )]
 
-position = Vector2( 910, 312 )
+position = Vector2( 875, 172 )
 
-[node name="CorridorMid23" parent="." index="13" instance=ExtResource( 4 )]
+[node name="CorridorMid15" parent="." index="19" instance=ExtResource( 4 )]
 
-position = Vector2( 945, 312 )
+position = Vector2( 910, 172 )
 
-[node name="CorridorMid24" parent="." index="14" instance=ExtResource( 4 )]
+[node name="CorridorMid17" parent="." index="20" instance=ExtResource( 4 )]
 
-position = Vector2( 980, 312 )
+position = Vector2( 700, 172 )
 
-[node name="CorridorMid4" parent="." index="15" instance=ExtResource( 3 )]
+[node name="CorridorMid7" parent="." index="21" instance=ExtResource( 4 )]
 
-position = Vector2( 560, 312 )
+position = Vector2( 665, 258 )
 
-[node name="CorridorMid5" parent="." index="16" instance=ExtResource( 3 )]
+[node name="CorridorMid20" parent="." index="22" instance=ExtResource( 4 )]
 
-position = Vector2( 630, 312 )
+position = Vector2( 665, 172 )
 
-[node name="CorridorMid8" parent="." index="17" instance=ExtResource( 3 )]
+[node name="CorridorMid9" parent="." index="23" instance=ExtResource( 4 )]
 
-position = Vector2( 700, 312 )
+position = Vector2( 735, 258 )
 
-[node name="CorridorMid6" parent="." index="18" instance=ExtResource( 4 )]
+[node name="CorridorEnd" parent="." index="24" instance=ExtResource( 5 )]
 
-position = Vector2( 595, 312 )
+position = Vector2( 770, 258 )
 
-[node name="CorridorMid12" parent="." index="19" instance=ExtResource( 4 )]
+[node name="CorridorEnd2" parent="." index="25" instance=ExtResource( 5 )]
 
-position = Vector2( 560, 226 )
+position = Vector2( 770, 172 )
 
-[node name="CorridorMid13" parent="." index="20" instance=ExtResource( 4 )]
+[node name="Elevator" parent="." index="26" instance=ExtResource( 6 )]
 
-position = Vector2( 595, 226 )
-
-[node name="CorridorMid19" parent="." index="21" instance=ExtResource( 4 )]
-
-position = Vector2( 630, 226 )
-
-[node name="CorridorMid14" parent="." index="22" instance=ExtResource( 4 )]
-
-position = Vector2( 875, 226 )
-
-[node name="CorridorMid15" parent="." index="23" instance=ExtResource( 4 )]
-
-position = Vector2( 910, 226 )
-
-[node name="CorridorMid17" parent="." index="24" instance=ExtResource( 4 )]
-
-position = Vector2( 700, 226 )
-
-[node name="CorridorMid7" parent="." index="25" instance=ExtResource( 4 )]
-
-position = Vector2( 665, 312 )
-
-[node name="CorridorMid20" parent="." index="26" instance=ExtResource( 4 )]
-
-position = Vector2( 665, 226 )
-
-[node name="CorridorMid9" parent="." index="27" instance=ExtResource( 4 )]
-
-position = Vector2( 735, 312 )
-
-[node name="CorridorEnd" parent="." index="28" instance=ExtResource( 5 )]
-
-position = Vector2( 770, 312 )
-
-[node name="CorridorEnd2" parent="." index="29" instance=ExtResource( 5 )]
-
-position = Vector2( 770, 226 )
-
-[node name="Elevator" parent="." index="30" instance=ExtResource( 6 )]
-
-position = Vector2( 805, 312 )
+editor/display_folded = true
+position = Vector2( 805, 258 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Elevator" index="2"]
 
@@ -254,38 +157,38 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/move = SubResource( 3 )
+anims/move = SubResource( 1 )
 blend_times = [  ]
 
-[node name="CorridorStart4" parent="." index="31" instance=ExtResource( 7 )]
+[node name="CorridorStart4" parent="." index="27" instance=ExtResource( 7 )]
 
-position = Vector2( 840, 312 )
+position = Vector2( 840, 258 )
 
-[node name="CorridorMid16" parent="." index="32" instance=ExtResource( 4 )]
+[node name="CorridorMid16" parent="." index="28" instance=ExtResource( 4 )]
 
-position = Vector2( 945, 226 )
+position = Vector2( 945, 172 )
 
-[node name="CorridorMid18" parent="." index="33" instance=ExtResource( 4 )]
+[node name="CorridorMid18" parent="." index="29" instance=ExtResource( 4 )]
 
-position = Vector2( 735, 226 )
+position = Vector2( 735, 172 )
 
-[node name="CorridorStart3" parent="." index="34" instance=ExtResource( 7 )]
+[node name="CorridorStart3" parent="." index="30" instance=ExtResource( 7 )]
 
-position = Vector2( 840, 226 )
+position = Vector2( 840, 172 )
 
-[node name="CorridorEnd3" parent="." index="35" instance=ExtResource( 8 )]
+[node name="CorridorEnd3" parent="." index="31" instance=ExtResource( 8 )]
 
-position = Vector2( 1015, 312 )
+position = Vector2( 1015, 258 )
 
-[node name="CorridorEnd4" parent="." index="36" instance=ExtResource( 8 )]
+[node name="CorridorEnd4" parent="." index="32" instance=ExtResource( 8 )]
 
-position = Vector2( 980, 226 )
+position = Vector2( 980, 172 )
 
-[node name="Static" parent="." index="37" instance=ExtResource( 9 )]
+[node name="Static" parent="." index="33" instance=ExtResource( 9 )]
 
-[node name="Player" parent="." index="38" instance=ExtResource( 10 )]
+[node name="Player" parent="." index="34" instance=ExtResource( 10 )]
 
-position = Vector2( 595, 312 )
+position = Vector2( 595, 258 )
 
 [connection signal="animation_finished" from="Elevator/AnimationPlayer" to="Elevator" method="_on_AnimationPlayer_animation_finished"]
 

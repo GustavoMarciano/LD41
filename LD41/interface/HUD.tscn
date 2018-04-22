@@ -450,7 +450,7 @@ content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
 
-[node name="HUD" type="CanvasLayer"]
+[node name="HUD" type="CanvasLayer" index="0"]
 
 layer = 10
 offset = Vector2( 0, 0 )
@@ -492,7 +492,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_styles/panel = SubResource( 1 )
-_sections_unfolded = [ "Size Flags", "Theme", "custom_styles" ]
+_sections_unfolded = [ "Anchor", "Size Flags", "Theme", "custom_styles" ]
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Top/Panel" index="0"]
 

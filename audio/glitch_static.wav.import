@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/glitch_static.wav-e2d575203f505fb15eac717f8c18255c.sample"
+
+[deps]
+
+source_file="res://audio/glitch_static.wav"
+source_md5="1a25d9c82928472ef781793ac441b939"
+
+dest_files=[ "res://.import/glitch_static.wav-e2d575203f505fb15eac717f8c18255c.sample" ]
+dest_md5="34447dfad9ca65c4c966fd94a9b3bfbd"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -7,10 +7,10 @@ path="res://.import/corridor-mid1.png-4ba9536d7d171d16bb2f7b96af6668a2.stex"
 [deps]
 
 source_file="res://levels/corridor-mid1.png"
-source_md5="7ab2dae80c667a4295515969ef8a770d"
+source_md5="8170a7229f71fc193b3ff5a1e37de61a"
 
 dest_files=[ "res://.import/corridor-mid1.png-4ba9536d7d171d16bb2f7b96af6668a2.stex" ]
-dest_md5="3ba665095e7dda7854b3341dff33a45c"
+dest_md5="b00bf0a71a30230510dead7e34c986d0"
 
 [params]
 

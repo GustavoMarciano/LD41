@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://levels/corridor-end-closed.png" type="Texture" id=1]
+[ext_resource path="res://levels/CorridorBody.tscn" type="PackedScene" id=2]
+[ext_resource path="res://levels/WallEnd.tscn" type="PackedScene" id=3]
 
 [node name="CorridorEnd" type="Sprite"]
 
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="WallEnd" parent="." index="1" instance=ExtResource( 3 )]
 
 

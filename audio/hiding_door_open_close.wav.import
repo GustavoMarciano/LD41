@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/hiding_door_open_close.wav-025af33d8ac4c6eec0f096b6ac994510.sample"
+
+[deps]
+
+source_file="res://audio/hiding_door_open_close.wav"
+source_md5="ffb4e04251bda29b270ff6884fa22890"
+
+dest_files=[ "res://.import/hiding_door_open_close.wav-025af33d8ac4c6eec0f096b6ac994510.sample" ]
+dest_md5="9220ee559beff01a3bcd8d7ad3622b87"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

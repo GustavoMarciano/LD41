@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ld41_theme_song.ogg-7a7282dde9f511d99c36417b5f0a0157.oggstr"
+
+[deps]
+
+source_file="res://audio/ld41_theme_song.ogg"
+source_md5="84207cae8494aea8e7033d9228bab4fc"
+
+dest_files=[ "res://.import/ld41_theme_song.ogg-7a7282dde9f511d99c36417b5f0a0157.oggstr" ]
+dest_md5="56c800ce0e2c4995021b8a460f973b07"
+
+[params]
+
+loop=true
+loop_offset=0

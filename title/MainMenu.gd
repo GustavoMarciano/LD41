@@ -1,4 +1,4 @@
-extends MarginContainer
+extends CanvasLayer
 
 var volume_number = -80
 
