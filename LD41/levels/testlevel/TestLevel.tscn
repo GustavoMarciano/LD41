@@ -11,35 +11,10 @@ extents = Vector2( 30.5854, 31.0897 )
 
 [node name="TestLevel" type="Node" index="0"]
 
-[node name="Sprite" type="Sprite" parent="." index="0"]
+[node name="Sprite3" type="Sprite" parent="." index="0"]
 
 editor/display_folded = true
-position = Vector2( 746.271, 320.012 )
-scale = Vector2( 14.1074, 1 )
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite" index="0"]
-
-position = Vector2( 0.276138, 0 )
-scale = Vector2( 1.04621, 1 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D" index="0"]
-
-shape = SubResource( 1 )
-
-[node name="Sprite3" type="Sprite" parent="." index="1"]
-
-editor/display_folded = true
+visible = false
 position = Vector2( 236, 243.226 )
 scale = Vector2( 2.5, 3.41332 )
 texture = ExtResource( 1 )
@@ -64,10 +39,31 @@ bounce = 0.0
 
 shape = SubResource( 1 )
 
-[node name="Elevator" parent="." index="2" instance=ExtResource( 2 )]
+[node name="Elevator" parent="." index="1" instance=ExtResource( 2 )]
+
+visible = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="2"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 749.167, 311.012 )
+scale = Vector2( 14.7593, 1 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
+
+position = Vector2( 1.41154, 8.98801 )
+shape = SubResource( 1 )
 
 [node name="Player" parent="." index="3" instance=ExtResource( 3 )]
 
-position = Vector2( 553.676, 275.058 )
+position = Vector2( 595, 270 )
 
 

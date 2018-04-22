@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+var prev_frame = 0
+
 var dir= Vector2()
 var walk = Vector2()
 
@@ -13,6 +15,12 @@ func _ready():
 	pass
 	
 func _physics_process(delta):
+	if prev_frame != $icon.frame:
+		if $icon.frame == 2:
+			$r_foot.play()
+		if $icon.frame == 5:
+			$l_foot.play()
+		prev_frame = $icon.frame
 
 	walk = dir * 50
 	walk = move_and_slide(walk,up)
@@ -24,11 +32,9 @@ func move(direction):
 		"left":
 			dir = left
 			$Animations.play("Walk Left")
-			$Steps.play()
 		"right":
 			dir = right
 			$Animations.play("Walk Right")
-			$Steps.play()
 		"up":
 			dir = up
 		"down":
@@ -36,5 +42,4 @@ func move(direction):
 		"stop":
 			dir = stop
 			$Animations.stop()
-			$Steps.stop()
 	pass
