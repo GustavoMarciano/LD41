@@ -517,10 +517,7 @@ visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 12
-text = "Input List :
-movement : move left | move right | stop
-Type \"input\" to show the list again
-"
+text = ""
 scroll_active = true
 scroll_following = true
 selection_enabled = true
