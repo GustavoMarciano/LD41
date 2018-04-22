@@ -7,7 +7,8 @@
 [ext_resource path="res://levels/CorridorEnd.tscn" type="PackedScene" id=5]
 [ext_resource path="res://models/Elevator.tscn" type="PackedScene" id=6]
 [ext_resource path="res://levels/CorridorStartOpen.tscn" type="PackedScene" id=7]
-[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=8]
+[ext_resource path="res://levels/CorridorEndClosed.tscn" type="PackedScene" id=8]
+[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -49,39 +50,11 @@ tracks/1/keys = {
 "values": [ 0.0, 0.0 ]
 }
 
-[sub_resource type="Animation" id=4]
-
-length = 4.0
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 4 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 805, 312 ), Vector2( 805, 226 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath(".:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 4 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ 0.0, 0.0 ]
-}
-
-[node name="TestLevel" type="Node" index="0"]
+[node name="TestLevel" type="Node"]
 
 [node name="StarField" parent="." index="0" instance=ExtResource( 1 )]
+
+max_speed = 500.0
 
 [node name="Floor" type="StaticBody2D" parent="." index="1"]
 
@@ -271,11 +244,7 @@ position = Vector2( 770, 312 )
 
 position = Vector2( 770, 226 )
 
-[node name="CorridorEnd4" parent="." index="30" instance=ExtResource( 5 )]
-
-position = Vector2( 1015, 312 )
-
-[node name="Elevator" parent="." index="31" instance=ExtResource( 6 )]
+[node name="Elevator" parent="." index="30" instance=ExtResource( 6 )]
 
 position = Vector2( 805, 312 )
 
@@ -289,47 +258,34 @@ playback_speed = 1.0
 anims/move = SubResource( 3 )
 blend_times = [  ]
 
-[node name="CorridorStart4" parent="." index="32" instance=ExtResource( 7 )]
+[node name="CorridorStart4" parent="." index="31" instance=ExtResource( 7 )]
 
 position = Vector2( 840, 312 )
 
-[node name="CorridorEnd3" parent="." index="33" instance=ExtResource( 5 )]
-
-position = Vector2( 980, 226 )
-
-[node name="CorridorMid16" parent="." index="34" instance=ExtResource( 4 )]
+[node name="CorridorMid16" parent="." index="32" instance=ExtResource( 4 )]
 
 position = Vector2( 945, 226 )
 
-[node name="CorridorMid18" parent="." index="35" instance=ExtResource( 4 )]
+[node name="CorridorMid18" parent="." index="33" instance=ExtResource( 4 )]
 
 position = Vector2( 735, 226 )
 
-[node name="Elevator2" parent="." index="36" instance=ExtResource( 6 )]
-
-editor/display_folded = true
-position = Vector2( 1015, 226 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Elevator2" index="2"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
-anims/move = SubResource( 4 )
-blend_times = [  ]
-
-[node name="CorridorStart3" parent="." index="37" instance=ExtResource( 7 )]
+[node name="CorridorStart3" parent="." index="34" instance=ExtResource( 7 )]
 
 position = Vector2( 840, 226 )
 
-[node name="Player" parent="." index="38" instance=ExtResource( 8 )]
+[node name="CorridorEnd3" parent="." index="35" instance=ExtResource( 8 )]
+
+position = Vector2( 1015, 312 )
+
+[node name="CorridorEnd4" parent="." index="36" instance=ExtResource( 8 )]
+
+position = Vector2( 980, 226 )
+
+[node name="Player" parent="." index="37" instance=ExtResource( 9 )]
 
 position = Vector2( 595, 312 )
 
 [connection signal="animation_finished" from="Elevator/AnimationPlayer" to="Elevator" method="_on_AnimationPlayer_animation_finished"]
-
-[connection signal="animation_finished" from="Elevator2/AnimationPlayer" to="Elevator2" method="_on_AnimationPlayer_animation_finished"]
 
 

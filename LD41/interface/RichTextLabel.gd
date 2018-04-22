@@ -4,6 +4,9 @@ signal action
 
 var is_interacting = false
 
+func _ready():
+	$"../LineEdit".grab_focus()
+
 func text_analyzer(new_text):
 	if is_interacting == false:
 		match new_text:
