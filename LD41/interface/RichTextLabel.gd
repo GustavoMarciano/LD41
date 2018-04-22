@@ -10,11 +10,11 @@ func text_analyzer(new_text):
 			add_text("Type input to show the list again ")
 			newline()
 		"move left":
-			$"../..".move("left")
+			$"../../../..".move("left")
 		"move right":
-			$"../..".move("right")
+			$"../../../..".move("right")
 		"stop":
-			$"../..".move("stop")
+			$"../../../..".move("stop")
 		"clear":
 			clear()
 	pass
