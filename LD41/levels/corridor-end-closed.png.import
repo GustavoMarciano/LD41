@@ -10,7 +10,7 @@ source_file="res://levels/corridor-end-closed.png"
 source_md5="f9c00cb5900d735c76c8f3143f85d404"
 
 dest_files=[ "res://.import/corridor-end-closed.png-34a25883a0c643ebde63297576dbd908.stex" ]
-dest_md5="6c7b67de74b8f7a79b04e99707d284da"
+dest_md5="04b8dd6856943748cbf4119d8ef6f9f8"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
