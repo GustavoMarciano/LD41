@@ -11,17 +11,19 @@ extents = Vector2( 47.9729, 10.454 )
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 2.2395, 313.618 )
+extents = Vector2( 6.23733, 313.618 )
 
 [node name="Elevator" type="Sprite"]
 
+position = Vector2( -0.985123, 9.03054 )
 texture = ExtResource( 1 )
+offset = Vector2( 0.985123, -9.03054 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="0"]
 
-position = Vector2( 0.276138, 0 )
+position = Vector2( 1.26126, -9.03054 )
 rotation = 0.00126791
 scale = Vector2( 1.04621, 1 )
 input_pickable = false
@@ -34,16 +36,15 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
 
-modulate = Color( 0, 0, 0, 1 )
-self_modulate = Color( 0, 0, 0, 1 )
-position = Vector2( -8.69136, 45.4138 )
+modulate = Color( 0, 0.625, 1, 1 )
+position = Vector2( -4.86371, 44.6577 )
 scale = Vector2( 1.00279, 1 )
 shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
 
 [node name="Area2D" type="Area2D" parent="." index="1"]
 
-editor/display_folded = true
+position = Vector2( 0.985123, -9.03054 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -55,7 +56,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
 
-position = Vector2( 0.239838, -296.842 )
+position = Vector2( -1.59531, -283.996 )
 shape = SubResource( 2 )
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
