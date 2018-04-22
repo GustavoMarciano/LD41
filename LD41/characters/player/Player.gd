@@ -42,4 +42,3 @@ func move(direction):
 		"stop":
 			dir = stop
 			$Animations.stop()
-	pass
