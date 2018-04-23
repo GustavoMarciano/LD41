@@ -86,7 +86,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="KinematicBody2D" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -132,6 +132,7 @@ _sections_unfolded = [ "Drag Margin" ]
 
 position = Vector2( 0.0283699, -0.0701561 )
 texture = ExtResource( 3 )
+flip_h = true
 hframes = 7
 frame = 6
 _sections_unfolded = [ "Animation", "Offset", "Transform" ]
