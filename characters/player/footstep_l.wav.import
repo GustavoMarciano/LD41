@@ -10,7 +10,7 @@ source_file="res://characters/player/footstep_l.wav"
 source_md5="261c69404f94e00fd03566a9518d4e68"
 
 dest_files=[ "res://.import/footstep_l.wav-425cf2497197d9e0b1d0c84368b838a2.sample" ]
-dest_md5="afd2204faf6542b3e129b468817ff256"
+dest_md5="8a181c35b344ac9232a73606296f97b3"
 
 [params]
 
@@ -19,6 +19,6 @@ force/mono=false
 force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=true
-edit/normalize=true
+edit/normalize=false
 edit/loop=false
 compress/mode=0

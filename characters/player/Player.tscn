@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://characters/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://interface/HUD.tscn" type="PackedScene" id=2]
 [ext_resource path="res://characters/player/player.png" type="Texture" id=3]
 [ext_resource path="res://characters/player/footstep_r.wav" type="AudioStream" id=4]
 [ext_resource path="res://characters/player/footstep_l.wav" type="AudioStream" id=5]
+[ext_resource path="res://characters/player/engine_noise.wav" type="AudioStream" id=6]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -199,5 +200,15 @@ volume_db = 0.0
 autoplay = false
 mix_target = 0
 bus = "Master"
+
+[node name="engine_sound" type="AudioStreamPlayer2D" parent="." index="9"]
+
+stream = ExtResource( 6 )
+volume_db = 0.0
+autoplay = true
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
 
 
