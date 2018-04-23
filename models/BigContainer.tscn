@@ -21,7 +21,7 @@ tracks/0/keys = {
 "values": [ 2, 3, 4, 5, 6, 7, 8 ]
 }
 
-[node name="Sprite" type="Sprite"]
+[node name="Sprite" type="Sprite" index="0"]
 
 texture = ExtResource( 1 )
 hframes = 9
