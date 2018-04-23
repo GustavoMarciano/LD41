@@ -10,7 +10,7 @@ source_file="res://skins/console.png"
 source_md5="d6019a9a6af1d3bda07278015db678ac"
 
 dest_files=[ "res://.import/console.png-4143c0d010811bbaac028df0c7e6018f.stex" ]
-dest_md5="f7c3af5c0f4ed31f3421199069ef2c76"
+dest_md5="63225f71850e31605641e04c3cfc939f"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
