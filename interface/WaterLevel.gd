@@ -25,10 +25,9 @@ func _process(delta):
 	$Water.scale.y = p/3-0.6
 	
 	if level > 0:
+		if randi()%int(level*60+1) == 0:
+			emit_bubble()
 		level -= delta*0.01
-	
-	if randi()%int(level*60+1) == 0:
-		emit_bubble()
 	
 	var static_generator = get_tree().get_root().find_node("Static", true, false).find_node("Panel")
 	

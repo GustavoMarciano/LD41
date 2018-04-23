@@ -44,7 +44,7 @@ shader_param/screen_w = null
 shader_param/screen_h = null
 shader_param/intensity = null
 
-[node name="Static" type="CanvasLayer" index="0"]
+[node name="Static" type="CanvasLayer"]
 
 layer = 2
 offset = Vector2( 0, 0 )
@@ -55,7 +55,6 @@ _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Material", "Size F
 
 [node name="Panel" type="Panel" parent="." index="0"]
 
-visible = false
 material = SubResource( 2 )
 anchor_left = 0.0
 anchor_top = 0.0
