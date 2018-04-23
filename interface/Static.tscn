@@ -44,7 +44,7 @@ shader_param/screen_w = null
 shader_param/screen_h = null
 shader_param/intensity = null
 
-[node name="Static" type="CanvasLayer"]
+[node name="Static" type="CanvasLayer" index="0"]
 
 layer = 2
 offset = Vector2( 0, 0 )
