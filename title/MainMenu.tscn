@@ -23,7 +23,7 @@ tracks/0/keys = {
 "values": [ -72.0, -10.0 ]
 }
 
-[node name="MainMenu" type="CanvasLayer" index="0"]
+[node name="MainMenu" type="CanvasLayer"]
 
 layer = 1
 offset = Vector2( 0, 0 )

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/console_alert.wav-0d415c443e6be70b4c337462d67b09ab.sample"
+
+[deps]
+
+source_file="res://audio/console_alert.wav"
+source_md5="3479ea7417f04bb37be8f5293e460613"
+
+dest_files=[ "res://.import/console_alert.wav-0d415c443e6be70b4c337462d67b09ab.sample" ]
+dest_md5="556f2cd3c6ca9d7b6e45a40c2fb31c20"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
