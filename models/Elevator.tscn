@@ -21,9 +21,6 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="0"]
 
-position = Vector2( 1.1991, -9.03082 )
-rotation = 0.00126791
-scale = Vector2( 1.04621, 1 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -31,12 +28,12 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
 
 modulate = Color( 0, 0.625, 1, 1 )
-position = Vector2( -3.42148, 51.6558 )
-scale = Vector2( 1.00279, 1 )
+position = Vector2( 0, 46 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
 
