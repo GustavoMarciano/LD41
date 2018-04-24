@@ -7,10 +7,10 @@ path="res://.import/teleporter.png-3bfabcd966884144afece102100e523b.stex"
 [deps]
 
 source_file="res://models/teleporter.png"
-source_md5="719f526b7f400ea85b03dd7f34824e72"
+source_md5="cb39042e05e86fa86149b22bd7ac752b"
 
 dest_files=[ "res://.import/teleporter.png-3bfabcd966884144afece102100e523b.stex" ]
-dest_md5="97d886a4dcdab568df24843b941f5fc9"
+dest_md5="59c7677770a42242775bb1b51816ec81"
 
 [params]
 

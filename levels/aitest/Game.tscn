@@ -3,7 +3,7 @@
 [ext_resource path="res://levels/aitest/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://levels/aitest/Character.tscn" type="PackedScene" id=2]
 
-[node name="Game" type="Node"]
+[node name="Game" type="Node" index="0"]
 
 [node name="TileMap" parent="." index="0" instance=ExtResource( 1 )]
 
