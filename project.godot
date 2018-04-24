@@ -14,6 +14,14 @@ config/name="LD41"
 run/main_scene="res://Master.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1120
+window/size/height=630
+window/size/fullscreen=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
 [rendering]
 
 environment/default_clear_color=Color( 0, 0, 0, 1 )
