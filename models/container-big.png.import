@@ -10,7 +10,7 @@ source_file="res://models/container-big.png"
 source_md5="06a88c211d521d07dc282805d23ec3fd"
 
 dest_files=[ "res://.import/container-big.png-7b0088aba5e4285cd950edf5d9a7aa1b.stex" ]
-dest_md5="397d068294afdf6a44fd507e470e19a5"
+dest_md5="26bb1c3f7b95781f5afafec2f1134aed"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

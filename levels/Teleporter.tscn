@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://levels/teleporter.png" type="Texture" id=1]
-[ext_resource path="res://levels/TeleporterBody.tscn" type="PackedScene" id=2]
+[ext_resource path="res://levels/Teleporter.gd" type="Script" id=2]
+[ext_resource path="res://levels/TeleporterBody.tscn" type="PackedScene" id=3]
 
 [sub_resource type="Animation" id=1]
 
@@ -22,11 +23,20 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5 ]
 }
 
-[node name="Teleporter" type="Sprite"]
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 1.77869, 10 )
+
+[node name="Teleporter" type="Sprite" index="0"]
 
 texture = ExtResource( 1 )
 hframes = 6
+frame = 3
+script = ExtResource( 2 )
 _sections_unfolded = [ "Animation" ]
+up = null
+down = null
 
 [node name="Animation" type="AnimationPlayer" parent="." index="0"]
 
@@ -38,6 +48,29 @@ playback_speed = 1.0
 anims/Blink = SubResource( 1 )
 blend_times = [  ]
 
-[node name="StaticBody2D" parent="." index="1" instance=ExtResource( 2 )]
+[node name="StaticBody2D" parent="." index="1" instance=ExtResource( 3 )]
+
+[node name="Area2D" type="Area2D" parent="." index="2"]
+
+position = Vector2( -0.115982, -2.89956 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+
+position = Vector2( -2.60484, 23.8247 )
+shape = SubResource( 2 )
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+
+[connection signal="area_exited" from="Area2D" to="." method="_on_Area2D_area_exited"]
 
 

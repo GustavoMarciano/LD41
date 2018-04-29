@@ -10,14 +10,14 @@
 [sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 15.211
-height = 3.17287
+radius = 9.69645
+height = 10.067
 
 [sub_resource type="CapsuleShape2D" id=2]
 
 custom_solver_bias = 0.0
 radius = 5.10101
-height = 1.8512
+height = 8.26833
 
 [sub_resource type="CapsuleShape2D" id=3]
 
@@ -99,7 +99,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 0.0415802, 1.62154 )
+position = Vector2( -0.147354, 2.28282 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="." index="2"]
@@ -145,6 +145,8 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
+collision_layer = 2
+collision_mask = 2
 audio_bus_override = false
 audio_bus_name = "Master"
 
@@ -204,6 +206,7 @@ bus = "Master"
 
 [node name="engine_sound" type="AudioStreamPlayer2D" parent="." index="9"]
 
+position = Vector2( -0.0565605, 1.4706 )
 stream = ExtResource( 6 )
 volume_db = 0.0
 autoplay = true

@@ -1,6 +1,8 @@
 extends RichTextLabel
 
 signal action
+signal up
+signal down
 
 var is_interacting = false
 
@@ -35,6 +37,10 @@ func text_analyzer(new_text):
 				clear()
 			"yes":
 				emit_signal("action")
+			"up":
+				emit_signal("up")
+			"down":
+				emit_signal("down")
 	pass
 
 func _on_LineEdit_text_entered(new_text):
