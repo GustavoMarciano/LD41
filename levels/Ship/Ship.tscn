@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://levels/StarField.tscn" type="PackedScene" id=1]
 [ext_resource path="res://levels/CorridorStart.tscn" type="PackedScene" id=2]
@@ -6,46 +6,74 @@
 [ext_resource path="res://levels/CorridorMid1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://levels/CorridorMid2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://levels/CorridorMid4.tscn" type="PackedScene" id=6]
-[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=7]
-[ext_resource path="res://interface/Static.tscn" type="PackedScene" id=8]
+[ext_resource path="res://levels/CorridorEnd.tscn" type="PackedScene" id=7]
+[ext_resource path="res://levels/Teleporter.tscn" type="PackedScene" id=8]
+[ext_resource path="res://levels/CorridorStartOpen.tscn" type="PackedScene" id=9]
+[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=10]
+[ext_resource path="res://levels/CorridorEndClosed.tscn" type="PackedScene" id=11]
+[ext_resource path="res://interface/Static.tscn" type="PackedScene" id=12]
 
-[node name="Ship" type="Node2D"]
+[node name="Ship" type="Node2D" index="0"]
 
 [node name="StarField" parent="." index="0" instance=ExtResource( 1 )]
 
 [node name="CorridorStart" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 245, 121 )
+position = Vector2( 245, 86 )
 
 [node name="CorridorMid3" parent="." index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 280, 121 )
+position = Vector2( 280, 86 )
 
 [node name="CorridorMid1" parent="." index="3" instance=ExtResource( 4 )]
 
-position = Vector2( 315, 121 )
+position = Vector2( 315, 86 )
 
 [node name="CorridorMid2" parent="." index="4" instance=ExtResource( 5 )]
 
-position = Vector2( 350, 121 )
+position = Vector2( 350, 86 )
 
 [node name="CorridorMid4" parent="." index="5" instance=ExtResource( 3 )]
 
-position = Vector2( 420, 121 )
+position = Vector2( 420, 86 )
 
 [node name="CorridorMid5" parent="." index="6" instance=ExtResource( 6 )]
 
-position = Vector2( 385, 121 )
+position = Vector2( 385, 86 )
 
 [node name="CorridorMid6" parent="." index="7" instance=ExtResource( 3 )]
 
-position = Vector2( 455, 121 )
+position = Vector2( 455, 86 )
 
-[node name="Player" parent="." index="8" instance=ExtResource( 7 )]
+[node name="CorridorMid7" parent="." index="8" instance=ExtResource( 3 )]
 
-position = Vector2( 376, 136 )
+position = Vector2( 455, 86 )
 
-[node name="Static" parent="." index="9" instance=ExtResource( 8 )]
+[node name="CorridorMid8" parent="." index="9" instance=ExtResource( 3 )]
+
+position = Vector2( 595, 86 )
+
+[node name="CorridorEnd" parent="." index="10" instance=ExtResource( 7 )]
+
+position = Vector2( 490, 86 )
+
+[node name="Teleporter" parent="." index="11" instance=ExtResource( 8 )]
+
+position = Vector2( 525, 86 )
+
+[node name="CorridorStart2" parent="." index="12" instance=ExtResource( 9 )]
+
+position = Vector2( 560, 86 )
+
+[node name="Player" parent="." index="13" instance=ExtResource( 10 )]
+
+position = Vector2( 385, 86 )
+
+[node name="CorridorEnd2" parent="." index="14" instance=ExtResource( 11 )]
+
+position = Vector2( 630, 86 )
+
+[node name="Static" parent="." index="15" instance=ExtResource( 12 )]
 
 
 [editable path="Static"]

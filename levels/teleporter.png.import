@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/alien.png-3747897583956bac8c6ab6c07b5d2905.stex"
+path="res://.import/teleporter.png-c312cd0cb8c44261e6354dad12fb1f7e.stex"
 
 [deps]
 
-source_file="res://characters/alien/alien.png"
-source_md5="1fa9124cae6c28c4ed82994b349e71b4"
+source_file="res://levels/teleporter.png"
+source_md5="4afbecb3a28b41674430f96fce01e289"
 
-dest_files=[ "res://.import/alien.png-3747897583956bac8c6ab6c07b5d2905.stex" ]
-dest_md5="d811003d47949fc456e070b1befcb21b"
+dest_files=[ "res://.import/teleporter.png-c312cd0cb8c44261e6354dad12fb1f7e.stex" ]
+dest_md5="f1998ba9d15b45e943dd1847f4e0469b"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
