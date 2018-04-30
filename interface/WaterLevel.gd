@@ -29,7 +29,7 @@ func _process(delta):
 			emit_bubble()
 		level -= delta*0.01
 	
-	var static_generator = get_tree().get_root().find_node("Static", true, false).find_node("Panel")
+	var static_generator = get_tree().get_root().find_node("Static", true, false).find_node("Overlay")
 	
 	if static_generator:
 		static_generator.intensity = 1-level

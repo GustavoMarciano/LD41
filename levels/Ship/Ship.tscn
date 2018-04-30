@@ -122,5 +122,9 @@ position = Vector2( 111.938, 104.118 )
 
 [node name="Static" parent="." index="4" instance=ExtResource( 11 )]
 
+[node name="Overlay" parent="Static" index="0"]
+
+visible = true
+
 
 [editable path="Static"]
