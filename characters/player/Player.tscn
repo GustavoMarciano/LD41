@@ -139,7 +139,6 @@ _sections_unfolded = [ "Animation", "Offset", "Transform" ]
 
 [node name="PlayerArea2D" type="Area2D" parent="." index="4"]
 
-editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -159,7 +158,6 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="RadarAreaD2" type="Area2D" parent="." index="5"]
 
-editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0

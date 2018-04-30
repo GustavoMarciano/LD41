@@ -1,15 +1,15 @@
 extends Sprite
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+onready var hud = $"../../Player/HUD/Top/Panel/RichTextLabel"
 
-func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
+func _on_Area2D_area_entered(area):
+	if area == $"../../Player/RadarAreaD2":
+		hud.newline()
+		hud.add_text("You're getting closer to  (big container) ...")
+	elif area == $"../../Player/PlayerArea2D":
+		hud.newline()
+		$"../../Player".move("stop")
+		hud.add_text("You're in front of the big container")
+		hud.newline()
+		hud.add_text("type open to open the container")
 	pass
-
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass

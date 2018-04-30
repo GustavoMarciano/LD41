@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://levels/StarField.tscn" type="PackedScene" id=1]
 [ext_resource path="res://levels/CorridorEnd.tscn" type="PackedScene" id=2]
@@ -9,9 +9,10 @@
 [ext_resource path="res://levels/Teleporter.tscn" type="PackedScene" id=7]
 [ext_resource path="res://levels/CorridorStart.tscn" type="PackedScene" id=8]
 [ext_resource path="res://levels/CorridorEndClosed.tscn" type="PackedScene" id=9]
-[ext_resource path="res://characters/alien/Alien.tscn" type="PackedScene" id=10]
-[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=11]
-[ext_resource path="res://interface/Static.tscn" type="PackedScene" id=12]
+[ext_resource path="res://models/BigContainer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://characters/alien/Alien.tscn" type="PackedScene" id=11]
+[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=12]
+[ext_resource path="res://interface/Static.tscn" type="PackedScene" id=13]
 
 [node name="Ship" type="Node2D" index="0"]
 
@@ -69,6 +70,10 @@ position = Vector2( -20, 86 )
 z_index = 1
 _sections_unfolded = [ "Transform", "Z Index" ]
 
+[node name="BigContainer" parent="Floor1" index="11" instance=ExtResource( 10 )]
+
+position = Vector2( -198.292, 105.103 )
+
 [node name="Floor2" type="Node2D" parent="." index="2"]
 
 editor/display_folded = true
@@ -118,19 +123,21 @@ position = Vector2( -20, 80 )
 z_index = 1
 _sections_unfolded = [ "Transform", "Z Index" ]
 
-[node name="Alien" parent="." index="3" instance=ExtResource( 10 )]
+[node name="Alien" parent="." index="3" instance=ExtResource( 11 )]
 
 position = Vector2( 140, 0 )
 
-[node name="Player" parent="." index="4" instance=ExtResource( 11 )]
+[node name="Player" parent="." index="4" instance=ExtResource( 12 )]
 
 position = Vector2( 140, 86 )
 
-[node name="Static" parent="." index="5" instance=ExtResource( 12 )]
+[node name="Static" parent="." index="5" instance=ExtResource( 13 )]
+
+editor/display_folded = true
 
 [node name="Overlay" parent="Static" index="0"]
 
-visible = true
+visible = false
 
 
 [editable path="Static"]
