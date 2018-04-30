@@ -1,11 +1,12 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://title/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://title/ld41_theme_song.ogg" type="AudioStream" id=2]
 [ext_resource path="res://title/play-text.png" type="Texture" id=3]
 [ext_resource path="res://title/godot_logo_placeholder.png" type="Texture" id=4]
-[ext_resource path="res://title/credits-text.png" type="Texture" id=5]
-[ext_resource path="res://interface/Escape.tscn" type="PackedScene" id=6]
+[ext_resource path="res://title/Area2D.gd" type="Script" id=5]
+[ext_resource path="res://title/credits-text.png" type="Texture" id=6]
+[ext_resource path="res://interface/Escape.tscn" type="PackedScene" id=7]
 
 [sub_resource type="Animation" id=1]
 
@@ -44,6 +45,11 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
 }
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.3868, 14.517 )
 
 [node name="MainMenu" type="CanvasLayer" index="0"]
 
@@ -100,12 +106,30 @@ scale = Vector2( 2.53054, 1 )
 texture = ExtResource( 4 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="CreditsText" type="Sprite" parent="." index="3"]
+[node name="Area2D" type="Area2D" parent="." index="3"]
 
 position = Vector2( 1030, 590 )
-texture = ExtResource( 5 )
+scale = Vector2( 1.81351, 0.423939 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+
+scale = Vector2( 2.86754, 2.4889 )
+shape = SubResource( 3 )
+
+[node name="CreditsText" type="Sprite" parent="Area2D/CollisionShape2D" index="0"]
+
+scale = Vector2( 0.192296, 0.947739 )
+texture = ExtResource( 6 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Escape" parent="." index="4" instance=ExtResource( 6 )]
+[node name="Escape" parent="." index="4" instance=ExtResource( 7 )]
 
 

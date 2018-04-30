@@ -10,7 +10,7 @@ source_file="res://title/credits-text.png"
 source_md5="4f85ee42d906ee13402e7a578ca93d17"
 
 dest_files=[ "res://.import/credits-text.png-76c7d595d3bafb6a86ae99628cf70463.stex" ]
-dest_md5="c62c462208edf700f7dd64c3241e6c87"
+dest_md5="e0edc700faeba3b2ce1ef7216be35664"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
