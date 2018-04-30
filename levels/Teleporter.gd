@@ -21,12 +21,10 @@ func down():
 
 func _on_Area2D_area_entered(area):
 
-	if area == $"../../Alien/Area2D":
-		print(movements)
-		print("hello")
+	if area != $"../../Player/RadarAreaD2" || $"../../Player/PlayerArea2D":
 		randomize()
 		var x = rand_range(0,movements.size())
-		$"../../Alien".move(movements[x])
+		area.get_owner().move(movements[x])
 
 	if area == $"../../Player/RadarAreaD2":
 		hud.newline()

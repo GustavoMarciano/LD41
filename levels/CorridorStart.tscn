@@ -6,7 +6,6 @@
 [ext_resource path="res://levels/WallStart.tscn" type="PackedScene" id=4]
 [ext_resource path="res://audio/console_beep.wav" type="AudioStream" id=5]
 
-
 [sub_resource type="Animation" id=1]
 
 resource_name = "Blink"
@@ -48,6 +47,10 @@ _sections_unfolded = [ "Pause", "Playback Options" ]
 [node name="StaticBody2D" parent="." index="1" instance=ExtResource( 3 )]
 
 [node name="WallStart" parent="." index="2" instance=ExtResource( 4 )]
+
+collision_layer = 5
+collision_mask = 5
+_sections_unfolded = [ "Collision" ]
 
 [node name="Beep" type="AudioStreamPlayer2D" parent="." index="3"]
 

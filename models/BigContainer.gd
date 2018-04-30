@@ -1,7 +1,7 @@
 extends Sprite
 
 onready var hud = $"../../Player/HUD/Top/Panel/RichTextLabel"
-export (bool) var open
+export (PoolStringArray) var drops 
 
 func open():
 	$AnimationPlayer.play("BigContainer")

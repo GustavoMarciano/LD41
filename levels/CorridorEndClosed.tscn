@@ -4,7 +4,7 @@
 [ext_resource path="res://levels/CorridorBody.tscn" type="PackedScene" id=2]
 [ext_resource path="res://levels/WallEnd.tscn" type="PackedScene" id=3]
 
-[node name="CorridorEnd" type="Sprite"]
+[node name="CorridorEnd" type="Sprite" index="0"]
 
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
@@ -12,5 +12,9 @@ _sections_unfolded = [ "Transform" ]
 [node name="StaticBody2D" parent="." index="0" instance=ExtResource( 2 )]
 
 [node name="WallEnd" parent="." index="1" instance=ExtResource( 3 )]
+
+collision_layer = 5
+collision_mask = 5
+_sections_unfolded = [ "Collision" ]
 
 

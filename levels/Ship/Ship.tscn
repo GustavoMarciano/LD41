@@ -11,8 +11,8 @@
 [ext_resource path="res://levels/CorridorEndClosed.tscn" type="PackedScene" id=9]
 [ext_resource path="res://models/BigContainer.tscn" type="PackedScene" id=10]
 [ext_resource path="res://models/SmallContainer.tscn" type="PackedScene" id=11]
-[ext_resource path="res://characters/alien/Alien.tscn" type="PackedScene" id=12]
-[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=13]
+[ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=12]
+[ext_resource path="res://characters/alien/Alien.tscn" type="PackedScene" id=13]
 [ext_resource path="res://interface/Static.tscn" type="PackedScene" id=14]
 [ext_resource path="res://interface/Escape.tscn" type="PackedScene" id=15]
 
@@ -75,6 +75,7 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 [node name="BigContainer" parent="Floor1" index="11" instance=ExtResource( 10 )]
 
 position = Vector2( -153.292, 105.103 )
+drops = null
 
 [node name="Floor2" type="Node2D" parent="." index="2"]
 
@@ -129,24 +130,27 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 position = Vector2( -203.492, 101.008 )
 
-[node name="Alien" parent="." index="3" instance=ExtResource( 12 )]
-
-position = Vector2( 140, 0 )
-collision_layer = 1
-collision_mask = 1
-speed = 100.0
-
-[node name="Player" parent="." index="4" instance=ExtResource( 13 )]
+[node name="Player" parent="." index="3" instance=ExtResource( 12 )]
 
 position = Vector2( 140, 86 )
 
-[node name="Static" parent="." index="5" instance=ExtResource( 14 )]
+[node name="Alien" parent="." index="4" instance=ExtResource( 13 )]
+
+position = Vector2( 259.22, 8.24328 )
+speed = 50.0
+
+[node name="Alien2" parent="." index="5" instance=ExtResource( 13 )]
+
+position = Vector2( 175.731, 5.67735 )
+speed = 50.0
+
+[node name="Static" parent="." index="6" instance=ExtResource( 14 )]
 
 [node name="Overlay" parent="Static" index="0"]
 
 visible = false
 
-[node name="Escape" parent="." index="6" instance=ExtResource( 15 )]
+[node name="Escape" parent="." index="7" instance=ExtResource( 15 )]
 
 
 [editable path="Static"]
