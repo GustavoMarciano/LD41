@@ -16,7 +16,7 @@
 [ext_resource path="res://interface/Static.tscn" type="PackedScene" id=14]
 [ext_resource path="res://interface/Escape.tscn" type="PackedScene" id=15]
 
-[node name="Ship" type="Node2D"]
+[node name="Ship" type="Node2D" index="0"]
 
 [node name="StarField" parent="." index="0" instance=ExtResource( 1 )]
 
@@ -132,6 +132,9 @@ position = Vector2( -203.492, 101.008 )
 [node name="Alien" parent="." index="3" instance=ExtResource( 12 )]
 
 position = Vector2( 140, 0 )
+collision_layer = 1
+collision_mask = 1
+speed = 100.0
 
 [node name="Player" parent="." index="4" instance=ExtResource( 13 )]
 

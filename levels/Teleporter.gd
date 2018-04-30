@@ -2,7 +2,16 @@ extends Sprite
 
 onready var hud = $"../../Player/HUD/Top/Panel/RichTextLabel"
 export (bool) var up 
-export (bool) var down 
+export (bool) var down
+var movements = []
+
+func _ready():
+	if up == true :
+		movements = ["right","left","up"]
+	if down == true :
+		 movements = ["right","left","down"]
+	if up == true && down == true :
+		 movements = ["right","left","up","down"]
 
 func up():
 	$"../../Player".global_position.y -= 86
@@ -11,6 +20,14 @@ func down():
 	$"../../Player".global_position.y += 86
 
 func _on_Area2D_area_entered(area):
+
+	if area == $"../../Alien/Area2D":
+		print(movements)
+		print("hello")
+		randomize()
+		var x = rand_range(0,movements.size())
+		$"../../Alien".move(movements[x])
+
 	if area == $"../../Player/RadarAreaD2":
 		hud.newline()
 		hud.add_text("You're getting closer to  (elevator) ...")

@@ -1,17 +1,37 @@
 extends KinematicBody2D
 
-const GRAVITY = 98
-
-var left = Vector2(-1, 0)
-var right = Vector2(1, 0)
 export(float) var speed
+var movements = ["right","left","up","down"]
+var raycasts = {"right":"RayCast2DRight","left":"RayCast2DLeft"}
+const GRAVITY = 1
+var motion = Vector2()
+const up = Vector2(0,-1)
 
 func _ready():
-	$Animations.play("Walk Right")
+	move("right")
+	pass
 
-func move(dir):
-	move_and_slide(dir)
+func _physics_process(delta):
+	motion.y += GRAVITY 
+	motion = move_and_slide(motion,up)
+	if get_node(raycasts["right"]).is_colliding():
+		move(movements[1])
+	elif get_node(raycasts["left"]).is_colliding():
+		move(movements[0])
+	pass
 
-func _process(delta):
-	move(right*speed)
-	move_and_slide(Vector2(0, GRAVITY))
+func move(direction):
+	match direction:
+		"left":
+			motion.x = -speed
+			$Animations.play("Walk Left")
+		"right":
+			motion.x = speed
+			$Animations.play("Walk Right")
+		"stop":
+			motion.x = 0
+			$Animations.stop()
+		"up":
+			self.global_position.y -= 86
+		"down":
+			self.global_position.y += 86
