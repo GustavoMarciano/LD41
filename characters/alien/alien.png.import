@@ -10,7 +10,7 @@ source_file="res://characters/alien/alien.png"
 source_md5="1fa9124cae6c28c4ed82994b349e71b4"
 
 dest_files=[ "res://.import/alien.png-3747897583956bac8c6ab6c07b5d2905.stex" ]
-dest_md5="d811003d47949fc456e070b1befcb21b"
+dest_md5="d27182f805ca58ab3555c14fea49a39a"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
