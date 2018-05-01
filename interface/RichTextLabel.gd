@@ -1,8 +1,6 @@
 extends RichTextLabel
 
-signal action
-signal up
-signal down
+signal teleport
 signal open
 
 var is_interacting = false
@@ -36,12 +34,8 @@ func text_analyzer(new_text):
 				$"../../../..".move("stop")
 			"clear":
 				clear()
-			"yes":
-				emit_signal("action")
-			"up":
-				emit_signal("up")
-			"down":
-				emit_signal("down")
+			"teleport":
+				emit_signal("teleport")
 			"open":
 				emit_signal("open")
 	pass

@@ -122,7 +122,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="RayCast2DRight" type="RayCast2D" parent="." index="4"]
 
-position = Vector2( 13.8118, -0.170515 )
+position = Vector2( 12.7937, -0.170515 )
 rotation = -1.5708
 enabled = true
 exclude_parent = true
@@ -132,6 +132,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Area2D" type="Area2D" parent="." index="5"]
 
+editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -148,5 +149,7 @@ _sections_unfolded = [ "Collision" ]
 position = Vector2( -0.0176735, 0 )
 scale = Vector2( 1.27522, 1 )
 shape = SubResource( 4 )
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 
 

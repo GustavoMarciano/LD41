@@ -1,11 +1,15 @@
 extends KinematicBody2D
 
+signal teleport
+
 export(float) var speed
-var movements = ["right","left","up","down"]
-var raycasts = {"right":"RayCast2DRight","left":"RayCast2DLeft"}
-const GRAVITY = 1
-var motion = Vector2()
+
 const up = Vector2(0,-1)
+const GRAVITY = 1
+
+var motion = Vector2()
+var movements = ["right","left","teleport"]
+var raycasts = {"right":"RayCast2DRight","left":"RayCast2DLeft"}
 
 func _ready():
 	move("right")
@@ -31,7 +35,11 @@ func move(direction):
 		"stop":
 			motion.x = 0
 			$Animations.stop()
-		"up":
-			self.global_position.y -= 86
-		"down":
-			self.global_position.y += 86
+		"teleport":
+			emit_signal("teleport")
+
+func _on_Area2D_area_entered(area):
+	randomize()
+	var x = rand_range(0,movements.size())
+	move(movements[x])
+	pass
