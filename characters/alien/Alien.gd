@@ -1,6 +1,8 @@
 extends KinematicBody2D
 
 signal teleport
+signal open
+signal hiden
 
 export(float) var speed
 
@@ -37,6 +39,8 @@ func move(direction):
 			$Animations.stop()
 		"teleport":
 			emit_signal("teleport")
+		"open":
+			emit_signal("open")
 
 func _on_Area2D_area_entered(area):
 	randomize()

@@ -16,7 +16,7 @@
 [ext_resource path="res://interface/Static.tscn" type="PackedScene" id=14]
 [ext_resource path="res://interface/Escape.tscn" type="PackedScene" id=15]
 
-[node name="Ship" type="Node2D"]
+[node name="Ship" type="Node2D" index="0"]
 
 [node name="StarField" parent="." index="0" instance=ExtResource( 1 )]
 

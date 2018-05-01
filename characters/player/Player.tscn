@@ -10,22 +10,16 @@
 [sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 9.69645
-height = 10.067
+radius = 8.33532
+height = 15.5423
 
 [sub_resource type="CapsuleShape2D" id=2]
 
 custom_solver_bias = 0.0
-radius = 5.10101
-height = 8.26833
+radius = 5.901
+height = 2.97754
 
-[sub_resource type="CapsuleShape2D" id=3]
-
-custom_solver_bias = 0.0
-radius = 14.4383
-height = 208.153
-
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 
 resource_name = "Walk Left"
 length = 0.7
@@ -56,7 +50,7 @@ tracks/1/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 
 length = 0.7
 loop = true
@@ -86,6 +80,12 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
+[sub_resource type="CapsuleShape2D" id=5]
+
+custom_solver_bias = 0.0
+radius = 10.0
+height = 89.6846
+
 [node name="Player" type="KinematicBody2D"]
 
 input_pickable = false
@@ -99,7 +99,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( -0.147354, 2.28282 )
+position = Vector2( 0.311245, 3.2475 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="." index="2"]
@@ -152,11 +152,49 @@ audio_bus_name = "Master"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerArea2D" index="0"]
 
 modulate = Color( 0.136335, 0.972656, 0.0417938, 1 )
-position = Vector2( 0.0565643, 1.52716 )
+position = Vector2( 0.339371, -0.225937 )
 shape = SubResource( 2 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="RadarAreaD2" type="Area2D" parent="." index="5"]
+[node name="Animations" type="AnimationPlayer" parent="." index="5"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+"anims/Walk Left" = SubResource( 3 )
+"anims/Walk Right" = SubResource( 4 )
+blend_times = [  ]
+
+[node name="r_foot" type="AudioStreamPlayer" parent="." index="6"]
+
+stream = ExtResource( 4 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="l_foot" type="AudioStreamPlayer" parent="." index="7"]
+
+stream = ExtResource( 5 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="engine_sound" type="AudioStreamPlayer2D" parent="." index="8"]
+
+position = Vector2( -0.0565605, 1.4706 )
+stream = ExtResource( 6 )
+volume_db = 0.0
+autoplay = true
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Radar2D" type="Area2D" parent="." index="9"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -169,51 +207,10 @@ audio_bus_override = false
 audio_bus_name = "Master"
 _sections_unfolded = [ "Collision" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RadarAreaD2" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Radar2D" index="0"]
 
-modulate = Color( 0.972656, 0.805392, 0.0417938, 1 )
-self_modulate = Color( 0.101563, 1, 0, 1 )
-position = Vector2( 0.0565643, 1.52716 )
 rotation = 1.5708
-shape = SubResource( 3 )
-_sections_unfolded = [ "Transform", "Visibility" ]
-
-[node name="Animations" type="AnimationPlayer" parent="." index="6"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
-"anims/Walk Left" = SubResource( 4 )
-"anims/Walk Right" = SubResource( 5 )
-blend_times = [  ]
-
-[node name="r_foot" type="AudioStreamPlayer" parent="." index="7"]
-
-stream = ExtResource( 4 )
-volume_db = 0.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-[node name="l_foot" type="AudioStreamPlayer" parent="." index="8"]
-
-stream = ExtResource( 5 )
-volume_db = 0.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-[node name="engine_sound" type="AudioStreamPlayer2D" parent="." index="9"]
-
-position = Vector2( -0.0565605, 1.4706 )
-stream = ExtResource( 6 )
-volume_db = 0.0
-autoplay = true
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
+shape = SubResource( 5 )
+_sections_unfolded = [ "Transform" ]
 
 

@@ -1,5 +1,8 @@
 extends KinematicBody2D
 
+signal teleport
+signal open
+
 const GRAVITY = 1
 const SPEED = 50
 
@@ -23,6 +26,12 @@ func move(direction):
 		"stop":
 			motion.x = 0
 			$Animations.stop()
+		"teleport":
+			emit_signal("teleport")
+		"open":
+			emit_signal("open")
+		"hide":
+			emit_signal("hiden")
 
 func sound():
 		if prev_frame != $icon.frame:

@@ -1,8 +1,5 @@
 extends RichTextLabel
 
-signal teleport
-signal open
-
 var is_interacting = false
 
 func _ready():
@@ -35,11 +32,11 @@ func text_analyzer(new_text):
 			"clear":
 				clear()
 			"teleport":
-				emit_signal("teleport")
+				$"../../../..".move("teleport")
 			"open":
-				emit_signal("open")
+				$"../../../..".move("open")
 			"hide":
-				emit_signal("hide")
+				$"../../../..".move("hide")
 	pass
 
 func _on_LineEdit_text_entered(new_text):
