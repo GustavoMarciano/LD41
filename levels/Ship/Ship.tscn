@@ -60,7 +60,7 @@ position = Vector2( -300, 86 )
 [node name="Teleporter" parent="Floor1" index="8" instance=ExtResource( 7 )]
 
 position = Vector2( -54.8047, 85.9527 )
-up = true
+teleport = NodePath("../../Floor2/Teleporter")
 
 [node name="CorridorStart" parent="Floor1" index="9" instance=ExtResource( 8 )]
 
@@ -113,8 +113,7 @@ position = Vector2( -300, 80 )
 [node name="Teleporter" parent="Floor2" index="7" instance=ExtResource( 7 )]
 
 position = Vector2( -55, 80 )
-up = false
-down = true
+teleport = NodePath("../../Floor1/Teleporter")
 
 [node name="CorridorStart" parent="Floor2" index="8" instance=ExtResource( 8 )]
 
@@ -136,21 +135,16 @@ position = Vector2( 140, 86 )
 
 [node name="Alien" parent="." index="4" instance=ExtResource( 13 )]
 
-position = Vector2( 259.22, 8.24328 )
-speed = 50.0
+position = Vector2( 277.262, 4.67719 )
+speed = 60.0
 
-[node name="Alien2" parent="." index="5" instance=ExtResource( 13 )]
-
-position = Vector2( 175.731, 5.67735 )
-speed = 50.0
-
-[node name="Static" parent="." index="6" instance=ExtResource( 14 )]
+[node name="Static" parent="." index="5" instance=ExtResource( 14 )]
 
 [node name="Overlay" parent="Static" index="0"]
 
 visible = false
 
-[node name="Escape" parent="." index="7" instance=ExtResource( 15 )]
+[node name="Escape" parent="." index="6" instance=ExtResource( 15 )]
 
 
 [editable path="Static"]
