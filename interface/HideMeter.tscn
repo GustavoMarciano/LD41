@@ -1,21 +1,57 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://interface/HideMeter.gd" type="Script" id=1]
 [ext_resource path="res://skins/hidelevel.png" type="Texture" id=2]
 [ext_resource path="res://skins/hide-meter-bg.png" type="Texture" id=3]
 
-[node name="HideMeter" type="Node2D"]
+[sub_resource type="Animation" id=1]
+
+resource_name = "HideMeter"
+length = 20.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 20 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.13121, -1 ), Vector2( 1.13121, -44.5 ) ]
+}
+
+[node name="HideMeter" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="MeterLine" type="Sprite" parent="." index="0"]
 
-position = Vector2( -0.0656042, 45 )
-scale = Vector2( 1.13121, 0.705494 )
+position = Vector2( -13.0656, 46 )
+scale = Vector2( 1.13121, -44.5 )
 texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MeterLine" index="0"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/HideMeter = SubResource( 1 )
+blend_times = [  ]
 
 [node name="Background" type="Sprite" parent="." index="1"]
 
 texture = ExtResource( 3 )
+
+[connection signal="animation_finished" from="MeterLine/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+
+[connection signal="animation_started" from="MeterLine/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_started"]
 
 

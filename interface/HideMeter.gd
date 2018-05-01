@@ -1,17 +1,22 @@
 extends Node2D
 
-var level = 0.0
-
+var HideAbility = 1 #1 for able, 0 for not able
 
 func _ready():
 	pass
 
-func _process(delta):
-	var p = ($Background.texture.get_size().y-8)*level
-	
-	$MeterLine.position.y = -p-2
-	$MeterLine.scale.y = p/3-0.6
-	
-	if level > 0:
-		level -= delta*0.01
-#	pass
+func _on_AnimationPlayer_animation_started(HideMeter):
+	HideAbility = 0
+	pass
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	HideAbility = 1
+	pass
+
+func _unhandled_input(event):
+	if event is InputEventKey:
+		if event.pressed and event.scancode == KEY_ALT:
+			if HideAbility == 0:
+				pass
+			if HideAbility == 1:
+				$MeterLine/AnimationPlayer.play("HideMeter")

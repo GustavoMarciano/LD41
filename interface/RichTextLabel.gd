@@ -44,6 +44,8 @@ func text_analyzer(new_text):
 				emit_signal("down")
 			"open":
 				emit_signal("open")
+			"hide":
+				emit_signal("hide")
 	pass
 
 func _on_LineEdit_text_entered(new_text):
