@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 signal teleport
 signal open
+signal hiden
 
 const GRAVITY = 1
 const SPEED = 50
