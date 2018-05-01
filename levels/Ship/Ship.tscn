@@ -75,7 +75,6 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 [node name="BigContainer" parent="Floor1" index="11" instance=ExtResource( 10 )]
 
 position = Vector2( -153.292, 105.103 )
-drops = null
 
 [node name="Floor2" type="Node2D" parent="." index="2"]
 
