@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/HideMeter.gd" type="Script" id=1]
+[ext_resource path="res://skins/hidelevel.png" type="Texture" id=2]
+[ext_resource path="res://skins/hide-meter-bg.png" type="Texture" id=3]
+
+[node name="HideMeter" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="MeterLine" type="Sprite" parent="." index="0"]
+
+position = Vector2( -0.0656042, 45 )
+scale = Vector2( 1.13121, 0.705494 )
+texture = ExtResource( 2 )
+
+[node name="Background" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 3 )
+
+

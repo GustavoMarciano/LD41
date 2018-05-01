@@ -10,7 +10,7 @@ source_file="res://skins/hide-meter-bg.png"
 source_md5="f7f2625144f99f4e0db7e23065c7ee39"
 
 dest_files=[ "res://.import/hide-meter-bg.png-fc9819d4820b6dd74f51b04e62fd3e86.stex" ]
-dest_md5="7fa9e030aa8508eb92380e4357e10e13"
+dest_md5="21e66e78e23a85a4f9e860884120abc4"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
