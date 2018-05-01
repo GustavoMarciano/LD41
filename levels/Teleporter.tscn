@@ -28,7 +28,7 @@ tracks/0/keys = {
 custom_solver_bias = 0.0
 extents = Vector2( 1.77869, 10 )
 
-[node name="Teleporter" type="Sprite" index="0"]
+[node name="Teleporter" type="Sprite"]
 
 texture = ExtResource( 1 )
 hframes = 6
@@ -36,6 +36,7 @@ frame = 1
 script = ExtResource( 2 )
 _sections_unfolded = [ "Animation" ]
 teleport = null
+teleport_offset = Vector2( 0, 38 )
 
 [node name="Animation" type="AnimationPlayer" parent="." index="0"]
 
