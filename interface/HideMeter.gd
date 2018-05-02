@@ -12,10 +12,12 @@ func _on_AnimationPlayer_animation_started(HideMeter):
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	HideAbility = 1
+	$"../../icon".modulate = Color(1, 1, 1, 1)
 	pass
 	
 func hide():
 	if HideAbility == 0:
 		pass
 	if HideAbility == 1:
-		$MeterLine/AnimationPlayer.play("HideMeter")
+		$"../../icon".modulate = Color(1, 1, 1, 0.5)
+		$MeterLine/AnimationPlayer.play_backwards("HideMeter")

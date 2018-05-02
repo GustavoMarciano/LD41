@@ -5,7 +5,7 @@ signal open
 signal hiden
 
 const GRAVITY = 1
-const SPEED = 50
+const SPEED = 15
 
 var prev_frame = 0
 var motion = Vector2()

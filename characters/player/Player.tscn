@@ -84,7 +84,7 @@ tracks/1/keys = {
 
 custom_solver_bias = 0.0
 radius = 10.0
-height = 89.6846
+height = 77.3814
 
 [node name="Player" type="KinematicBody2D"]
 

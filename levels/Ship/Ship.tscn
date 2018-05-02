@@ -135,6 +135,7 @@ position = Vector2( 140, 86 )
 [node name="Alien" parent="." index="4" instance=ExtResource( 13 )]
 
 position = Vector2( 277.262, 4.67719 )
+speed = 8.0
 
 [node name="Static" parent="." index="5" instance=ExtResource( 14 )]
 
