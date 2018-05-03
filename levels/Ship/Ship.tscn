@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://levels/StarField.tscn" type="PackedScene" id=1]
 [ext_resource path="res://levels/CorridorEnd.tscn" type="PackedScene" id=2]
@@ -12,9 +12,8 @@
 [ext_resource path="res://models/BigContainer.tscn" type="PackedScene" id=10]
 [ext_resource path="res://models/SmallContainer.tscn" type="PackedScene" id=11]
 [ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=12]
-[ext_resource path="res://interface/Escape.tscn" type="PackedScene" id=13]
-[ext_resource path="res://characters/alien/Alien.tscn" type="PackedScene" id=14]
-[ext_resource path="res://interface/Static.tscn" type="PackedScene" id=15]
+[ext_resource path="res://characters/alien/Alien.tscn" type="PackedScene" id=13]
+[ext_resource path="res://interface/Static.tscn" type="PackedScene" id=14]
 
 [node name="Ship" type="Node2D" index="0"]
 
@@ -132,16 +131,12 @@ position = Vector2( -203.492, 101.008 )
 
 position = Vector2( 140, 86 )
 
-[node name="Escape" parent="Player" index="10" instance=ExtResource( 13 )]
-
-position = Vector2( -140, -86 )
-
-[node name="Alien" parent="." index="4" instance=ExtResource( 14 )]
+[node name="Alien" parent="." index="4" instance=ExtResource( 13 )]
 
 position = Vector2( 277.262, 4.67719 )
 speed = 8.0
 
-[node name="Static" parent="." index="5" instance=ExtResource( 15 )]
+[node name="Static" parent="." index="5" instance=ExtResource( 14 )]
 
 [node name="Overlay" parent="Static" index="0"]
 

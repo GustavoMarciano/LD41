@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://characters/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://interface/HUD.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://characters/player/footstep_r.wav" type="AudioStream" id=4]
 [ext_resource path="res://characters/player/footstep_l.wav" type="AudioStream" id=5]
 [ext_resource path="res://characters/player/engine_noise.wav" type="AudioStream" id=6]
+[ext_resource path="res://interface/Escape.tscn" type="PackedScene" id=7]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -212,5 +213,10 @@ _sections_unfolded = [ "Collision" ]
 rotation = 1.5708
 shape = SubResource( 5 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="Escape" parent="." index="10" instance=ExtResource( 7 )]
+
+z_index = 6
+_sections_unfolded = [ "Z Index" ]
 
 
