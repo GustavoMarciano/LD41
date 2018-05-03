@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/play-text.png-28940d8d66a5686252489eed13e52581.stex"
+path="res://.import/Escape_BG.png-3234ea5cd515d2e9d69b127bce75870d.stex"
 
 [deps]
 
-source_file="res://title/play-text.png"
-source_md5="7a89069e114330da3ccb1031b892e8bd"
+source_file="res://interface/Escape_BG.png"
+source_md5="af28ac0f5e0e4aeca5736b67509c9897"
 
-dest_files=[ "res://.import/play-text.png-28940d8d66a5686252489eed13e52581.stex" ]
-dest_md5="0491e9f2f50e2bb02cf7f409b453da20"
+dest_files=[ "res://.import/Escape_BG.png-3234ea5cd515d2e9d69b127bce75870d.stex" ]
+dest_md5="7c63e46ec559a336dbce5b85e0b1f84a"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

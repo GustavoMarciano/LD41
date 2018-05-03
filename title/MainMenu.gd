@@ -2,7 +2,6 @@ extends CanvasLayer
 
 func _ready():
 	$ThemeSong/fade.play("song_fade")
-	$PlayText/AnimationPlayer.play("shine")
 	pass
 
 func _unhandled_input(event):
