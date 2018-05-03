@@ -82,11 +82,8 @@ blend_times = [  ]
 
 [node name="PlayText" type="Sprite" parent="." index="1"]
 
-editor/display_folded = true
 position = Vector2( 560, 560 )
 texture = ExtResource( 3 )
-hframes = 13
-frame = 12
 _sections_unfolded = [ "Animation", "Transform" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PlayText" index="0"]
