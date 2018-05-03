@@ -49,7 +49,7 @@ tracks/0/keys = {
 [sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
-extents = Vector2( 11.3868, 14.517 )
+extents = Vector2( 52.3286, 14.517 )
 
 [node name="MainMenu" type="CanvasLayer" index="0"]
 
@@ -82,9 +82,10 @@ blend_times = [  ]
 
 [node name="PlayText" type="Sprite" parent="." index="1"]
 
-position = Vector2( 560, 560 )
+position = Vector2( 485, 560 )
 texture = ExtResource( 3 )
-_sections_unfolded = [ "Animation", "Transform" ]
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PlayText" index="0"]
 
@@ -106,7 +107,6 @@ _sections_unfolded = [ "Transform" ]
 [node name="Area2D" type="Area2D" parent="." index="3"]
 
 position = Vector2( 1030, 590 )
-scale = Vector2( 1.81351, 0.423939 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -115,17 +115,21 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 5 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
 
-scale = Vector2( 2.86754, 2.4889 )
+position = Vector2( 0, -1.62903 )
 shape = SubResource( 3 )
-
-[node name="CreditsText" type="Sprite" parent="Area2D/CollisionShape2D" index="0"]
-
-scale = Vector2( 0.192296, 0.947739 )
-texture = ExtResource( 6 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="CreditsText" type="Sprite" parent="Area2D" index="1"]
+
+position = Vector2( -48, -8 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 6 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="Escape" parent="." index="4" instance=ExtResource( 7 )]
 
