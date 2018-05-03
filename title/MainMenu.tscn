@@ -32,7 +32,7 @@ tracks/0/keys = {
 custom_solver_bias = 0.0
 extents = Vector2( 11.3868, 14.517 )
 
-[node name="MainMenu" type="CanvasLayer"]
+[node name="MainMenu" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )
