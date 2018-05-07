@@ -25,7 +25,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3 ]
 }
 
-[node name="CorridorStart" type="Sprite" index="0"]
+[node name="CorridorStart" type="Sprite"]
 
 texture = ExtResource( 1 )
 hframes = 4

@@ -16,6 +16,7 @@
 
 [node name="Floor1" type="Node2D" parent="." index="1"]
 
+editor/display_folded = true
 position = Vector2( 440, 0 )
 
 [node name="CorridorStart" parent="Floor1" index="0" instance=ExtResource( 2 )]
@@ -92,15 +93,253 @@ position = Vector2( 225, 21 )
 
 [node name="Floor2" type="Node2D" parent="." index="2"]
 
+editor/display_folded = true
 position = Vector2( 440, -80 )
 
 [node name="CorridorStart" parent="Floor2" index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 15, -6 )
 
-[node name="Floor3" type="Node2D" parent="." index="3"]
+[node name="CorridorMid2" parent="Floor2" index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 455, -172 )
+position = Vector2( 50, -6 )
+
+[node name="CorridorMid3" parent="Floor2" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 85, -6 )
+
+[node name="CorridorMid4" parent="Floor2" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 120, -6 )
+
+[node name="CorridorMid5" parent="Floor2" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 155, -6 )
+
+[node name="CorridorMid6" parent="Floor2" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 190, -6 )
+
+[node name="CorridorMid7" parent="Floor2" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 225, -6 )
+
+[node name="CorridorMid8" parent="Floor2" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 260, -6 )
+
+[node name="CorridorMid9" parent="Floor2" index="8" instance=ExtResource( 3 )]
+
+position = Vector2( 295, -6 )
+
+[node name="CorridorMid10" parent="Floor2" index="9" instance=ExtResource( 3 )]
+
+position = Vector2( 330, -6 )
+
+[node name="CorridorMid11" parent="Floor2" index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 365, -6 )
+
+[node name="CorridorMid12" parent="Floor2" index="11" instance=ExtResource( 3 )]
+
+position = Vector2( 400, -6 )
+
+[node name="CorridorMid13" parent="Floor2" index="12" instance=ExtResource( 3 )]
+
+position = Vector2( 435, -6 )
+
+[node name="CorridorMid14" parent="Floor2" index="13" instance=ExtResource( 3 )]
+
+position = Vector2( 470, -6 )
+
+[node name="CorridorMid15" parent="Floor2" index="14" instance=ExtResource( 3 )]
+
+position = Vector2( 505, -6 )
+
+[node name="CorridorMid16" parent="Floor2" index="15" instance=ExtResource( 3 )]
+
+position = Vector2( 540, -6 )
+
+[node name="CorridorMid17" parent="Floor2" index="16" instance=ExtResource( 3 )]
+
+position = Vector2( 575, -6 )
+
+[node name="CorridorMid18" parent="Floor2" index="17" instance=ExtResource( 3 )]
+
+position = Vector2( 610, -6 )
+
+[node name="CorridorMid19" parent="Floor2" index="18" instance=ExtResource( 3 )]
+
+position = Vector2( 645, -6 )
+
+[node name="CorridorMid20" parent="Floor2" index="19" instance=ExtResource( 3 )]
+
+position = Vector2( 680, -6 )
+
+[node name="CorridorMid21" parent="Floor2" index="20" instance=ExtResource( 3 )]
+
+position = Vector2( 715, -6 )
+
+[node name="CorridorMid22" parent="Floor2" index="21" instance=ExtResource( 3 )]
+
+position = Vector2( 750, -6 )
+
+[node name="CorridorMid23" parent="Floor2" index="22" instance=ExtResource( 3 )]
+
+position = Vector2( 785, -6 )
+
+[node name="CorridorMid24" parent="Floor2" index="23" instance=ExtResource( 3 )]
+
+position = Vector2( 820, -6 )
+
+[node name="CorridorMid25" parent="Floor2" index="24" instance=ExtResource( 3 )]
+
+position = Vector2( 855, -6 )
+
+[node name="CorridorMid26" parent="Floor2" index="25" instance=ExtResource( 3 )]
+
+position = Vector2( 890, -6 )
+
+[node name="CorridorStart2" parent="Floor2" index="26" instance=ExtResource( 5 )]
+
+position = Vector2( 890, -6 )
+
+[node name="Teleporter" parent="Floor2" index="27" instance=ExtResource( 4 )]
+
+position = Vector2( 925, -6 )
+
+[node name="CorridorStart3" parent="Floor2" index="28" instance=ExtResource( 5 )]
+
+position = Vector2( 960, -6 )
+
+[node name="CorridorEnd" parent="Floor2" index="29" instance=ExtResource( 6 )]
+
+position = Vector2( 995, -6 )
+
+[node name="Floor3-a" type="Node2D" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( -330, -166 )
+
+[node name="CorridorStart" parent="Floor3-a" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 15, -6 )
+
+[node name="Teleporter2" parent="Floor3-a" index="1" instance=ExtResource( 4 )]
+
+position = Vector2( 50, -6 )
+
+[node name="CorridorStart4" parent="Floor3-a" index="2" instance=ExtResource( 5 )]
+
+position = Vector2( 85, -6 )
+
+[node name="CorridorMid4" parent="Floor3-a" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 120, -6 )
+
+[node name="CorridorMid5" parent="Floor3-a" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 155, -6 )
+
+[node name="CorridorMid6" parent="Floor3-a" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 190, -6 )
+
+[node name="CorridorMid7" parent="Floor3-a" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 225, -6 )
+
+[node name="Teleporter4" parent="Floor3-a" index="7" instance=ExtResource( 4 )]
+
+position = Vector2( 260, -6 )
+
+[node name="CorridorStart6" parent="Floor3-a" index="8" instance=ExtResource( 5 )]
+
+position = Vector2( 295, -6 )
+
+[node name="CorridorMid10" parent="Floor3-a" index="9" instance=ExtResource( 3 )]
+
+position = Vector2( 330, -6 )
+
+[node name="CorridorMid11" parent="Floor3-a" index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 365, -6 )
+
+[node name="CorridorMid12" parent="Floor3-a" index="11" instance=ExtResource( 3 )]
+
+position = Vector2( 400, -6 )
+
+[node name="CorridorMid13" parent="Floor3-a" index="12" instance=ExtResource( 3 )]
+
+position = Vector2( 435, -6 )
+
+[node name="CorridorMid14" parent="Floor3-a" index="13" instance=ExtResource( 3 )]
+
+position = Vector2( 470, -6 )
+
+[node name="Teleporter3" parent="Floor3-a" index="14" instance=ExtResource( 4 )]
+
+position = Vector2( 505, -6 )
+
+[node name="CorridorStart5" parent="Floor3-a" index="15" instance=ExtResource( 5 )]
+
+position = Vector2( 540, -6 )
+
+[node name="CorridorMid17" parent="Floor3-a" index="16" instance=ExtResource( 3 )]
+
+position = Vector2( 575, -6 )
+
+[node name="CorridorMid18" parent="Floor3-a" index="17" instance=ExtResource( 3 )]
+
+position = Vector2( 610, -6 )
+
+[node name="CorridorMid19" parent="Floor3-a" index="18" instance=ExtResource( 3 )]
+
+position = Vector2( 645, -6 )
+
+[node name="CorridorMid20" parent="Floor3-a" index="19" instance=ExtResource( 3 )]
+
+position = Vector2( 680, -6 )
+
+[node name="Teleporter5" parent="Floor3-a" index="20" instance=ExtResource( 4 )]
+
+position = Vector2( 715, -6 )
+
+[node name="CorridorStart7" parent="Floor3-a" index="21" instance=ExtResource( 5 )]
+
+position = Vector2( 750, -6 )
+
+[node name="CorridorMid23" parent="Floor3-a" index="22" instance=ExtResource( 3 )]
+
+position = Vector2( 785, -6 )
+
+[node name="CorridorMid24" parent="Floor3-a" index="23" instance=ExtResource( 3 )]
+
+position = Vector2( 820, -6 )
+
+[node name="CorridorMid25" parent="Floor3-a" index="24" instance=ExtResource( 3 )]
+
+position = Vector2( 855, -6 )
+
+[node name="CorridorMid26" parent="Floor3-a" index="25" instance=ExtResource( 3 )]
+
+position = Vector2( 890, -6 )
+
+[node name="CorridorStart2" parent="Floor3-a" index="26" instance=ExtResource( 5 )]
+
+position = Vector2( 890, -6 )
+
+[node name="Teleporter" parent="Floor3-a" index="27" instance=ExtResource( 4 )]
+
+position = Vector2( 925, -6 )
+
+[node name="CorridorStart3" parent="Floor3-a" index="28" instance=ExtResource( 5 )]
+
+position = Vector2( 960, -6 )
+
+[node name="CorridorEnd" parent="Floor3-a" index="29" instance=ExtResource( 6 )]
+
+position = Vector2( 995, -6 )
 
 [node name="Player" parent="." index="4" instance=ExtResource( 8 )]
 
