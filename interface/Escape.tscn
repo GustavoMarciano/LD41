@@ -4,7 +4,7 @@
 [ext_resource path="res://interface/Escape_BG.png" type="Texture" id=2]
 [ext_resource path="res://interface/Escape_Menu.png" type="Texture" id=3]
 
-[node name="Escape" type="CanvasLayer" index="0"]
+[node name="Escape" type="CanvasLayer"]
 
 layer = 1
 offset = Vector2( 0, 0 )
